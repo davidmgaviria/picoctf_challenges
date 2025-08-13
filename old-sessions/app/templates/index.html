@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <title>The New Twitter</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header box -->
+    <div class="header-box">
+      <div class="title-box">
+        <h1 id="page-title">Homepage</h1>
+      </div>
+      <hr>  <!-- light grey line -->
+
+      <div class="welcome-logout">
+        <h3 class="welcome-message">Welcome <em>{{ user }}</em></h3>
+        <a href="/logout" class="logout-button">Logout</a>
+      </div>
+
+      {% if flag %}
+      <p class="flag-message">{{ flag }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Comments box -->
+    <div class="comments-box">
+      <h3>Comments</h3>
+      <hr>
+      <!-- List of comment entries -->
+      <ul class="comment-list" id="commentList">
+
+        <!-- Example entry -->
+        <li class="comment">
+          <div class="comment-header">
+            <span class="username">billy_joe_134</span>
+            <span class="timestamp">2025-04-10 09:15</span>
+          </div>
+          <div class="comment-text">
+            This site is cool :D
+          </div>
+        </li>
+
+        <li class="comment">
+          <div class="comment-header">
+            <span class="username">mary_jones_8992</span>
+            <span class="timestamp">2024-2-20 14:50</span>
+          </div>
+          <div class="comment-text">
+            Hey I found a strange page at /sessions 
+          </div>
+        </li>
+
+        <li class="comment">
+          <div class="comment-header">
+            <span class="username">autin_1244</span>
+            <span class="timestamp">2023-07-05 18:30</span>
+          </div>
+          <div class="comment-text">
+            Hey everyone!!!
+          </div>
+        </li>
+
+        <li class="comment">
+          <div class="comment-header">
+            <span class="username">Admin</span>
+            <span class="timestamp">2023-01-02 07:45</span>
+          </div>
+          <div class="comment-text">
+            Hello world!
+          </div>
+        </li>
+
+      </ul>
+      
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Silly Little Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='login-register.css') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="input-box">
+      <div class="title-box">
+        <h1>Login</h1>
+      </div>
+
+      <hr>
+
+      <!-- Login form -->
+      <form id="input-form" method="POST">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <br><br>
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <br><br>
+
+        <!-- Action buttons -->
+        <div class="button-group">
+          <input type="submit" value="Login" class="primary-button">
+        </div>
+      </form>
+
+      <hr>
+
+      <!-- Error message (if any) -->
+      {% if error %}
+      <p class="error-message">{{ error }}</p>
+      {% endif %}
+
+    </div>
+  </div>
+</body>
+
+</html>

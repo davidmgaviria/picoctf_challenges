@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Silly Little Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="data-box">
+     
+      <!-- List of comment entries -->
+      <ul class="session-list" id="sessionList">
+        <!-- Example entry -->
+        <li class="comment">
+          <div class="comment-header">
+            <span class="username">Admin</span>
+            <span class="timestamp">2025-08-09 10:32</span>
+          </div>
+          <div class="comment-text">
+            This is an example comment.
+          </div>
+        </li>
+      </ul>
+
+    </div>
+ 
+  </div>
+</body>
+
+</html>

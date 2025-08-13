@@ -1,0 +1,78 @@
+@import url('base.css');  /* Import base styles */
+
+/* Box containing the form */
+.input-box {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Center form and limit width */
+.input-box form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Bold labels */
+.input-box label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Inputs styling */
+.input-box input[type="text"],
+.input-box input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Consistent bottom margin for inputs and button group */
+.input-box input[type="text"],
+.input-box input[type="password"],
+.input-box .button-group {
+  margin-bottom: 5px;
+}
+
+/* Buttons side-by-side container */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Primary button style (login/register submit) */
+.primary-button {
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  color: black;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Alternate button style (register/login link) */
+.alt-action-button {
+  flex: 1;
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Error messages in forms */
+.error-message {
+  color: red;
+  margin-top: 15px;
+}

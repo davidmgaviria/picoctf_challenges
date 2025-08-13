@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgreen;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.title-box {
+  text-align: center;
+}
+
+.title-box h1 {
+  margin: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid lightgrey;
+  margin: 10px 0 20px;
+}

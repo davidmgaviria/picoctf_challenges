@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>Silly Little Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header box -->
+    <div class="header-box">
+      <div class="title-box">
+        <h1 id="page-title">Homepage</h1>
+      </div>
+      <hr>  <!-- light grey line -->
+
+      <div class="welcome-logout">
+        <h3 class="welcome-message">Welcome <em>{{ user }}</em></h3>
+        <a href="/logout" class="logout-button">Logout</a>
+      </div>
+
+      {% if flag %}
+      <p class="flag-message">{{ flag }}</p>
+      {% endif %}
+    </div>
+
+  </div>
+</body>
+
+</html>
