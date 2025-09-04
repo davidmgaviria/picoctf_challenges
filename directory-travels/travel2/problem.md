@@ -1,4 +1,4 @@
-# Tabbing About
+# Directory Travels 2
 
 - Namespace: picoctf
 - ID: dir-travels2
