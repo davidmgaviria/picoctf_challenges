@@ -1,0 +1,1 @@
+The flag file is hidden and temporary.  Where do temporary things go?

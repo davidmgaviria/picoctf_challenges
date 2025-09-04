@@ -1,0 +1,1 @@
+My child has the flag, but its hidden! Maybe one of the arguments for 'ls' will help..
